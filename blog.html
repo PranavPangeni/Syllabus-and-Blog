@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Blog Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .blog-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    
+
+    .blog-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .blog-title {
+      font-size: 1.3em;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .byline {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 15px;
+    }
+    .navbar {
+            background-color: #181818;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+     .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+     .navbar a:hover {
+            background-color: #313131;
+        }
+    .read-more {
+      margin-top: auto;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .read-more:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+   
+  <h1>WELCOME TO THE BLOG HOTEL</h1>
+
+  <div class="navbar">
+    <a href="UNIT1.html">Chapter 1</a>
+    <a href="UNIT2.html">Chapter 2</a>
+    <a href="UNIT3.html">Chapter 3</a>
+    <a href="UNIT4.html">Chapter 4</a>
+    <a href="UNIT5.html">Chapter 5</a>
+    <a href="UNIT6.html">Chapter 6</a>
+    <a href="UNIT7.html">Chapter 7</a>
+    <a href="UNIT8.html">Chapter 8</a>
+    <a href="index.html">Home Page</a>
+</div>
+
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="" alt="Blog 1" class="blog-image">
+      <div class="blog-content">
+        <div class="blog-title">Exploring the Mountains of Nepal</div>
+        <div class="byline">By Pranav Sharma | May 12, 2025</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="" alt="Blog 2" class="blog-image">
+      <div class="blog-content">
+        <div class="blog-title">The Art of Minimal Living</div>
+        <div class="byline">By Pranav Koirala | May 10, 2025</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="" alt="Blog 3" class="blog-image">
+      <div class="blog-content">
+        <div class="blog-title">Tech Trends in 2025</div>
+        <div class="byline">By Pranav Bhandari | May 8, 2025</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="" alt="Blog 4" class="blog-image">
+      <div class="blog-content">
+        <div class="blog-title">Healthy Eating on a Budget</div>
+        <div class="byline">By Pranav Thapa | May 5, 2025</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="https://via.placeholder.com/400x180" alt="Blog 5" class="blog-image">
+      <div class="blog-content">
+        <div class="blog-title">A Guide to Remote Work Success</div>
+        <div class="byline">By Pranav Basnet | May 3, 2025</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/400x180" alt="Blog 5" class="blog-image">
+        <div class="blog-content">
+          <div class="blog-title">A Guide to Visiting all the corners of your house</div>
+          <div class="byline">By Pranav Basnet | May 3, 2025</div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
