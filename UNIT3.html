@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #6b6b6b;
+            padding: 7px;
+            text-align: center;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #181818;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #313131;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #181818;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .subcont {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .blownav {
+            background-color: rgb(216, 216, 216);
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>WELCOME TO THE WONDERLAND OF COMPUTER SCIENCE</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="nav.html">MENU</a>
+        <a href="UNIT1.html">Chapter 1</a>
+        <a href="UNIT2.html">Chapter 2</a>
+        <a href="UNIT3.html">Chapter 3</a>
+        <a href="UNIT4.html">Chapter 4</a>
+        <a href="UNIT5.html">Chapter 5</a>
+        <a href="UNIT6.html">Chapter 6</a>
+        <a href="UNIT7.html">Chapter 7</a>
+        <a href="UNIT8.html">Chapter 8</a>
+    </div>
+
+    <div class="blownav">
+        <div class="content">
+            <h1>Components of a Computer System</h1>
+
+            <div class="subcont">
+                <h2>INTRODUCTION TO OPERATING SYSTEMS</h2>
+                <p>An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. It acts as an intermediary between users and the computer hardware.</p>
+                
+                <h2>Types of Operating Systems Based on Processing</h2>
+                <h3>1. Batch Operating System</h3>
+                <p>Batch operating systems execute a series of jobs in batches without user interaction. Jobs are collected, processed, and outputted in groups, which improves efficiency but lacks real-time interaction.</p>
+                
+                <h3>2. Time-Sharing Operating System</h3>
+                <p>Time-sharing operating systems allow multiple users to access the computer simultaneously. The CPU time is divided among users, providing the illusion of dedicated resources and enabling interactive computing.</p>
+                
+                <h3>3. Distributed Operating System</h3>
+                <p>Distributed operating systems manage a group of independent computers and make them appear to users as a single coherent system. They enable resource sharing and improve performance and reliability.</p>
+                
+                <h3>4. Real-Time Operating System</h3>
+                <p>Real-time operating systems are designed to process data as it comes in, typically without buffering delays. They are used in systems where timing is critical, such as embedded systems and industrial robots.</p>
+                
+                <h2>Types of Operating Systems Based on User Interface</h2>
+                <h3>Graphical User Interface (GUI)</h3>
+                <p>GUI allows users to interact with the computer using graphical elements such as windows, icons, and menus. It is user-friendly and intuitive, making it accessible to a broader audience.</p>
+                
+                <h3>Character User Interface (CUI)</h3>
+                <p>CUI, also known as command-line interface (CLI), allows users to interact with the computer through text commands. It requires more technical knowledge but offers greater control and efficiency for advanced users.</p>
+                
+                <h2>Types of Operating Systems Based on Mode of User</h2>
+                <p>Operating systems can also be categorized based on how users interact with them. This includes single-user systems, which support one user at a time, and multi-user systems, which allow multiple users to access the system simultaneously.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Q&A Section</h2>
+            <div class="question">1. What is system software?</div>
+            <p>System software is a type of software that manages hardware components and provides a platform for running application software. Examples include:
+                <ul>
+                    <li>Operating Systems (Windows, Linux, macOS)</li>
+                    <li>Utility Software (Antivirus, Disk Cleanup)</li>
+                    <li>Firmware (BIOS, Embedded Systems)</li>
+                </ul>
+            </p>
+            <div class="question">2. What are the functions of an Operating System?</div>
+            <p>An OS performs essential functions such as:
+                <ul>
+                    <li>Process Management</li>
+                    <li>Memory Management</li>
+                    <li>File System Management</li>
+                    <li>Device and Peripheral Management</li>
+                    <li>Security and Access Control</li>
+                </ul>
+            </p>
+            <div class="question">3. What is the difference between system software and application software?</div>
+            <p>
+                <b>System Software:</b> Provides basic functionality for a computer, like operating systems.
+                <br>
+                <b>Application Software:</b> Performs specific tasks like word processing, web browsing, and media playback.
+            </p>
+            <div class="question">4. What are different types of user interfaces in operating systems?</div>
+            <p>Operating systems provide various user interfaces, including:
+                <ul>
+                    <li><b>Command Line Interface (CLI):</b> Text-based, requires commands (e.g., MS-DOS, Linux Terminal).</li>
+                    <li><b>Graphical User Interface (GUI):</b> Visual interaction using icons and menus (e.g., Windows, macOS).</li>
+                    <li><b>Menu-driven Interface:</b> Provides options in a menu format (e.g., ATM machines).</li>
+                </ul>
+            </p>
+            <div class="question">5. What is open-source software?</div>
+            <p>Open-source software is software with publicly available source code, allowing users to modify and distribute it. Examples include:
+                <ul>
+                    <li>Linux OS</li>
+                    <li>Apache Web Server</li>
+                    <li>LibreOffice</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

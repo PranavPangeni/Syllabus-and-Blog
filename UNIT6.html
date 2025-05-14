@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #6b6b6b;
+            padding: 7px;
+            text-align: center;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #181818;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #313131;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #181818;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .subcont {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .blownav {
+            background-color: rgb(216, 216, 216);
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>WELCOME TO THE WONDERLAND OF COMPUTER SCIENCE</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="nav.html">MENU</a>
+        <a href="UNIT1.html">Chapter 1</a>
+        <a href="UNIT2.html">Chapter 2</a>
+        <a href="UNIT3.html">Chapter 3</a>
+        <a href="UNIT4.html">Chapter 4</a>
+        <a href="UNIT5.html">Chapter 5</a>
+        <a href="UNIT6.html">Chapter 6</a>
+        <a href="UNIT7.html">Chapter 7</a>
+        <a href="UNIT8.html">Chapter 8</a>
+    </div>
+
+    <div class="blownav">
+        <div class="content">
+            <h1>Components of a Computer System</h1>
+
+            <div class="subcont">
+                <h2>INTRODUCTION TO HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It provides the structure and content of a webpage, allowing developers to define elements such as headings, paragraphs, links, images, and more. HTML is essential for web development, as it forms the backbone of all web content.</p>
+            
+            <h2>HTML DOCUMENT STRUCTURE</h2>
+            <p>An HTML document has a specific structure that includes the following components:</p>
+            <pre>
+!DOCTYPE html
+html
+head
+    title Page Title /title
+/head
+body
+    h1 This is a Heading /h1
+    p This is a paragraph. /p
+/body
+/html
+            </pre>
+            <p>The <code>!DOCTYPE html</code> declaration defines the document type and version of HTML. The <code><html></code> element is the root element, while the <code><head></code> section contains metadata, and the <code><body></code> section contains the visible content.</p>
+            
+            <h2>HTML ELEMENTS AND TAGS</h2>
+            <p>HTML consists of various elements, each defined by tags. Common HTML elements include:</p>
+            <ul>
+                <li><b>Headings:</b> Defined using h1 to h6 tags, with h1 being the highest level.</li>
+                <li><b>Paragraphs:</b> Defined using the p tag.</li>
+                <li><b>Links:</b> Created using the <code>a</code> tag, with the <code>href</code> attribute specifying the URL.</li>
+                <li><b>Images:</b> Inserted using the <code>img</code> tag, with the <code>src</code> attribute pointing to the image file.</li>
+                <li><b>Lists:</b> Ordered lists (<code>ol</code>) and unordered lists (<code>ul</code>) are used to create lists of items.</li>
+                <li><b>Tables:</b> Created using the <code>table</code> tag, with <code>tr</code> for rows and <code>td</code> for cells.</li>
+            </ul>
+            
+            <h2>INTRODUCTION TO CSS</h2>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. CSS allows developers to apply styles, such as colors, fonts, and layouts, to HTML elements, enhancing the visual appearance of web pages.</p>
+            
+            <h2>CSS SYNTAX AND SELECTORS</h2>
+            <p>CSS syntax consists of selectors and declarations. A selector targets HTML elements, while declarations define the styles to be applied:</p>
+            <pre>
+selector {
+    property: value;
+}
+            </pre>
+            <p>For example, to change the color of all paragraphs to blue:</p>
+            <pre>
+p {
+    color: blue;
+}
+            </pre>
+            <p>Common selectors include element selectors, class selectors (preceded by a dot), and ID selectors (preceded by a hash).</p>
+            
+            <h2>BOX MODEL AND LAYOUT</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements in the document tree. Each box consists of:</p>
+            <ul>
+                <li><b>Content:</b> The actual content of the box, such as text or images.</li>
+                <li><b>Padding:</b> The space between the content and the border.</li>
+                <li><b>Border:</b> The line surrounding the padding (if any).</li>
+                <li><b>Margin:</b> The space outside the border, separating the element from others.</li>
+            </ul>
+            <p>Understanding the box model is crucial for layout design and spacing in web development.</p>
+            
+            <h2>RESPONSIVE DESIGN</h2>
+            <p>Responsive web design ensures that web pages look good on all devices, from desktops to mobile phones. This is achieved through flexible layouts, images, and CSS media queries that apply different styles based on the device's screen size:</p>
+            <pre>
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+            </pre>
+            <p>Responsive design enhances user experience and accessibility across various devices.</p>
+            
+            <h2>BEST PRACTICES FOR HTML AND CSS</h2>
+            <p>To write clean, maintainable, and efficient HTML and CSS code, consider the following best practices:</p>
+            <ul>
+                <li>Use semantic HTML elements to improve accessibility and SEO.</li>
+                <li>Keep CSS organized by using comments and grouping related styles.</li>
+                <li>Minimize the use of inline styles; prefer external stylesheets.</li>
+                <li>Validate HTML and CSS code to ensure compliance with standards.</li>
+                <li>Optimize images and assets for faster loading times.</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Q&A Section</h2>
+            
+            <div class="question">1. What is HTML?</div>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It uses tags to structure content, including headings, paragraphs, links, and multimedia.</p>
+
+            <div class="question">2. What are the key differences between HTML and CSS?</div>
+            <p>
+                <ul>
+                    <li><b>HTML:</b> Defines the structure of a webpage.</li>
+                    <li><b>CSS:</b> Styles the appearance of a webpage.</li>
+                    <li>HTML uses tags like &lt;p&gt;, &lt;h1&gt;, &lt;div&gt;.</li>
+                    <li>CSS uses selectors and properties to modify layout, colors, and fonts.</li>
+                </ul>
+            </p>
+
+            <div class="question">3. What are the different types of CSS?</div>
+            <p>
+                <ul>
+                    <li><b>Inline CSS:</b> Applied directly within an HTML tag using the <code>style</code> attribute.</li>
+                    <li><b>Internal CSS:</b> Defined inside a &lt;style&gt; tag within the &lt;head&gt; section.</li>
+                    <li><b>External CSS:</b> Stored in a separate file (.css) and linked using a &lt;link&gt; tag.</li>
+                </ul>
+            </p>
+
+            <div class="question">4. What is the difference between classes and IDs in CSS?</div>
+            <p>
+                <ul>
+                    <li><b>Classes:</b> Used for multiple elements and defined with a dot (e.g., <code>.classname</code>).</li>
+                    <li><b>IDs:</b> Unique for one element and defined with a hash (#) (e.g., <code>#idname</code>).</li>
+                </ul>
+            </p>
+
+            <div class="question">5. What is responsive web design?</div>
+            <p>Responsive web design ensures that a website adapts to different screen sizes and devices using techniques such as:</p>
+            <ul>
+                <li>Flexible grid layouts</li>
+                <li>CSS media queries</li>
+                <li>Responsive images</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

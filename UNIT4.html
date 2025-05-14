@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #6b6b6b;
+            padding: 7px;
+            text-align: center;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #181818;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #313131;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #181818;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .subcont {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .blownav {
+            background-color: rgb(216, 216, 216);
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>WELCOME TO THE WONDERLAND OF COMPUTER SCIENCE</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="nav.html">MENU</a>
+        <a href="UNIT1.html">Chapter 1</a>
+        <a href="UNIT2.html">Chapter 2</a>
+        <a href="UNIT3.html">Chapter 3</a>
+        <a href="UNIT4.html">Chapter 4</a>
+        <a href="UNIT5.html">Chapter 5</a>
+        <a href="UNIT6.html">Chapter 6</a>
+        <a href="UNIT7.html">Chapter 7</a>
+        <a href="UNIT8.html">Chapter 8</a>
+    </div>
+
+    <div class="blownav">
+        <div class="content">
+            <h1>Components of a Computer System</h1>
+
+            <div class="subcont">
+                <h2>INTRODUCTION TO COMPUTER NETWORKS</h2>
+            <p>A computer network is a collection of interconnected devices that can communicate with each other to share resources and information. Networks can vary in size and complexity, ranging from small local area networks (LANs) to vast global networks like the Internet. The primary purpose of a computer network is to facilitate communication and resource sharing among users and devices.</p>
+            
+            <h2>Types of Networks</h2>
+            <h3>1. Local Area Network (LAN)</h3>
+            <p>A LAN is a network that connects computers and devices within a limited geographical area, such as a home, school, or office building. LANs are characterized by high data transfer rates and low latency. They are commonly used for sharing resources like printers and files among connected devices.</p>
+            
+            <h3>2. Wide Area Network (WAN)</h3>
+            <p>A WAN spans a large geographical area, often connecting multiple LANs. WANs are used to connect remote locations, such as branch offices or different cities. The Internet is the largest example of a WAN, enabling global communication and resource sharing.</p>
+            
+            <h3>3. Metropolitan Area Network (MAN)</h3>
+            <p>A MAN covers a larger area than a LAN but is smaller than a WAN, typically spanning a city or a large campus. MANs are often used by organizations to connect multiple buildings within a specific geographic area, providing high-speed connectivity.</p>
+            
+            <h3>4. Personal Area Network (PAN)</h3>
+            <p>A PAN is a small network, typically used for connecting personal devices like smartphones, tablets, and laptops within a short range. Bluetooth technology is commonly used for creating PANs, allowing devices to communicate wirelessly.</p>
+            
+            <h2>Network Topologies</h2>
+            <h3>1. Star Topology</h3>
+            <p>In a star topology, all devices are connected to a central hub or switch. This configuration allows for easy addition and removal of devices, as well as efficient data transmission. However, if the central hub fails, the entire network becomes inoperable.</p>
+            
+            <h3>2. Ring Topology</h3>
+            <p>In a ring topology, each device is connected to two other devices, forming a circular pathway for data transmission. Data travels in one direction, and each device acts as a repeater. While this topology can be efficient, a failure in any device can disrupt the entire network.</p>
+            
+            <h3>3. Bus Topology</h3>
+            <p>In a bus topology, all devices share a single communication line or cable. Data is transmitted in both directions along the bus, and devices listen for messages addressed to them. This topology is cost-effective but can suffer from performance issues as more devices are added.</p>
+            
+            <h3>4. Mesh Topology</h3>
+            <p>In a mesh topology, each device is connected to multiple other devices, creating multiple pathways for data transmission. This configuration provides redundancy and reliability, as data can take alternative routes if one connection fails. However, it can be complex and expensive to implement.</p>
+            
+            <h2>Protocols and Standards</h2>
+            <p>Network protocols are sets of rules that govern how data is transmitted over a network. Common protocols include:</p>
+            <ul>
+                <li><b>Transmission Control Protocol/Internet Protocol (TCP/IP):</b> The foundational protocol suite for the Internet, enabling communication between devices.</li>
+                <li><b>Hypertext Transfer Protocol (HTTP):</b> The protocol used for transferring web pages on the Internet.</li>
+                <li><b>File Transfer Protocol (FTP):</b> A standard network protocol used for transferring files between a client and server.</li>
+            </ul>
+            
+            <h2>Network Security</h2>
+            <p>Network security involves protecting the integrity, confidentiality, and availability of data and resources on a network. Common security measures include:</p>
+            <ul>
+                <li><b>Firewalls:</b> Devices or software that monitor and control incoming and outgoing network traffic based on predetermined security rules.</li>
+                <li><b>Encryption:</b> The process of converting data into a coded format to prevent unauthorized access.</li>
+                <li><b>Intrusion Detection Systems (IDS):</b> Tools that monitor network traffic for suspicious activity and potential threats.</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Q&A Section</h2>
+            
+            <div class="question">1. What is a computer network?</div>
+            <p>A computer network is a system of interconnected devices that communicate with each other to share resources and data. Networks can be classified based on size and purpose, such as LAN, MAN, and WAN.</p>
+            
+            <div class="question">2. What are the types of computer networks?</div>
+            <p>Computer networks are categorized into:
+                <ul>
+                    <li><b>LAN (Local Area Network):</b> Covers a small geographical area like an office or home.</li>
+                    <li><b>MAN (Metropolitan Area Network):</b> Covers a city or large campus.</li>
+                    <li><b>WAN (Wide Area Network):</b> Covers large distances, such as the internet.</li>
+                    <li><b>PAN (Personal Area Network):</b> Used for individual devices like Bluetooth connections.</li>
+                </ul>
+            </p>
+            
+            <div class="question">3. What is the difference between wired and wireless networks?</div>
+            <p>
+                <ul>
+                    <li><b>Wired Network:</b> Uses physical cables like Ethernet for connectivity, offering higher speed and security.</li>
+                    <li><b>Wireless Network:</b> Uses radio waves, such as Wi-Fi, for communication, offering flexibility but being more vulnerable to interference.</li>
+                </ul>
+            </p>
+
+            <div class="question">4. What are the main components of a computer network?</div>
+            <p>A network consists of several key components:
+                <ul>
+                    <li><b>Nodes:</b> Devices such as computers, servers, and printers.</li>
+                    <li><b>Switches:</b> Direct data to the correct destination.</li>
+                    <li><b>Routers:</b> Connect different networks together.</li>
+                    <li><b>Cables/Wireless Media:</b> Facilitate data transmission.</li>
+                    <li><b>Protocols:</b> Define communication rules (e.g., TCP/IP).</li>
+                </ul>
+            </p>
+            
+            <div class="question">5. What is an IP address and its types?</div>
+            <p>An IP address is a unique identifier for devices on a network. Types include:
+                <ul>
+                    <li><b>IPv4:</b> 32-bit addressing scheme (e.g., 192.168.1.1).</li>
+                    <li><b>IPv6:</b> 128-bit addressing scheme, offering more addresses.</li>
+                    <li><b>Static IP:</b> Manually assigned and remains constant.</li>
+                    <li><b>Dynamic IP:</b> Assigned automatically by DHCP servers.</li>
+                </ul>
+            </p>
+            
+            <div class="question">6. What is network topology?</div>
+            <p>Network topology refers to the arrangement of network elements. Common types include:
+                <ul>
+                    <li><b>Bus Topology:</b> Single backbone cable; cost-effective but prone to failure.</li>
+                    <li><b>Star Topology:</b> Devices connect to a central hub; reliable but dependent on the hub.</li>
+                    <li><b>Ring Topology:</b> Devices form a circular connection; data travels in one direction.</li>
+                    <li><b>Mesh Topology:</b> Every device connects to every other device; highly reliable but expensive.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

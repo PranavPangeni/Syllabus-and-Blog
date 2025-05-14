@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #6b6b6b;
+            padding: 7px;
+            text-align: center;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #181818;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #313131;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #181818;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .subcont {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .blownav {
+            background-color: rgb(216, 216, 216);
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>WELCOME TO THE WONDERLAND OF COMPUTER SCIENCE</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="nav.html">MENU</a>
+        <a href="UNIT1.html">Chapter 1</a>
+        <a href="UNIT2.html">Chapter 2</a>
+        <a href="UNIT3.html">Chapter 3</a>
+        <a href="UNIT4.html">Chapter 4</a>
+        <a href="UNIT5.html">Chapter 5</a>
+        <a href="UNIT6.html">Chapter 6</a>
+        <a href="UNIT7.html">Chapter 7</a>
+        <a href="UNIT8.html">Chapter 8</a>
+    </div>
+
+    <div class="blownav">
+        <div class="content">
+            <h1>Components of a Computer System</h1>
+
+            <div class="subcont">
+                <h2>INTRODUCTION TO C PROGRAMMING</h2>
+                <p>C is a high-level programming language that was developed in the early 1970s. It is widely used for system programming, application development, and embedded systems. C is known for its efficiency, flexibility, and control over system resources, making it a popular choice for developing operating systems, compilers, and other performance-critical applications.</p>
+                
+                <h2>BASIC SYNTAX AND STRUCTURE</h2>
+                <p>A C program consists of one or more functions, with the <code>main()</code> function serving as the entry point. The basic structure of a C program includes:</p>
+                <pre>
+    #include <stdio.h>
+    
+    int main() {
+        // Your code here
+        return 0;
+    }
+                </pre>
+                <p>In this structure, <code>#include <stdio.h></code> is a preprocessor directive that includes the standard input-output library, allowing the use of functions like <code>printf()</code> and <code>scanf()</code>.</p>
+                
+                <h2>DATA TYPES AND VARIABLES</h2>
+                <p>C supports several data types, including:</p>
+                <ul>
+                    <li><b>int:</b> Used for integer values.</li>
+                    <li><b>float:</b> Used for single-precision floating-point values.</li>
+                    <li><b>double:</b> Used for double-precision floating-point values.</li>
+                    <li><b>char:</b> Used for character values.</li>
+                </ul>
+                <p>Variables must be declared before use, specifying the data type:</p>
+                <pre>
+    int age;
+    float salary;
+    char grade;
+                </pre>
+                
+                <h2>CONTROL STRUCTURES</h2>
+                <p>C provides various control structures to manage the flow of execution:</p>
+                <h3>Conditional Statements</h3>
+                <p>Conditional statements allow the program to make decisions based on certain conditions:</p>
+                <pre>
+    if (age >= 18) {
+        printf("Adult");
+    } else {
+        printf("Minor");
+    }
+                </pre>
+                <h3>Loops</h3>
+                <p>Loops enable repetitive execution of code blocks:</p>
+                <pre>
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", i);
+    }
+                </pre>
+                <p>Other loop types include <code>while</code> and <code>do-while</code>.</p>
+                
+                <h2>FUNCTIONS</h2>
+                <p>Functions are reusable blocks of code that perform specific tasks. They can take parameters and return values:</p>
+                <pre>
+    int add(int a, int b) {
+        return a + b;
+    }
+                </pre>
+                <p>Functions promote code modularity and reusability.</p>
+                
+                <h2>ARRAYS AND STRINGS</h2>
+                <p>Arrays are collections of elements of the same data type. They are declared with a specific size:</p>
+                <pre>
+    int numbers[5];
+                </pre>
+                <p>Strings in C are represented as arrays of characters terminated by a null character:</p>
+                <pre>
+    char name[20] = "John";
+                </pre>
+                <p>Common string functions include <code>strlen()</code>, <code>strcpy()</code>, and <code>strcat()</code>.</p>
+                
+                <h2>POINTERS</h2>
+                <p>Pointers are variables that store memory addresses. They provide a powerful way to manipulate data and memory:</p>
+                <pre>
+    int *ptr;
+    int value = 10;
+    ptr = &value; // ptr now holds the address of value
+                </pre>
+                <p>Pointers are essential for dynamic memory allocation and array manipulation.</p>
+                
+                <h2>FILE HANDLING</h2>
+                <p>C provides functions for file handling, allowing reading from and writing to files:</p>
+                <pre>
+    FILE *file;
+    file = fopen("data.txt", "r"); // Open file for reading
+    fclose(file); // Close the file
+                </pre>
+                <p>File handling is crucial for data persistence and management in applications.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Q&A Section</h2>
+            
+            <div class="question">1. What is C programming?</div>
+            <p>C is a general-purpose, procedural programming language developed by Dennis Ritchie in 1972. It is widely used for system programming, embedded systems, and application development.</p>
+
+            <div class="question">2. What are the key features of C?</div>
+            <p>Key features of C include:
+                <ul>
+                    <li>Simple and efficient</li>
+                    <li>Structured programming language</li>
+                    <li>Low-level memory access</li>
+                    <li>Portable and fast</li>
+                    <li>Supports dynamic memory allocation</li>
+                </ul>
+            </p>
+
+            <div class="question">3. What is the difference between a compiler and an interpreter?</div>
+            <p>
+                <ul>
+                    <li><b>Compiler:</b> Translates the entire code at once and creates an executable file (e.g., GCC for C).</li>
+                    <li><b>Interpreter:</b> Translates and executes code line-by-line (e.g., Python interpreter).</li>
+                </ul>
+            </p>
+
+            <div class="question">4. What are data types in C?</div>
+            <p>Data types in C define the type of data a variable can hold. Common types include:
+                <ul>
+                    <li><b>int:</b> Stores integers</li>
+                    <li><b>float:</b> Stores decimal numbers</li>
+                    <li><b>char:</b> Stores single characters</li>
+                    <li><b>double:</b> Stores large decimal numbers</li>
+                </ul>
+            </p>
+
+            <div class="question">5. What is a pointer in C?</div>
+            <p>A pointer is a variable that stores the memory address of another variable. It is used for dynamic memory allocation, arrays, and function arguments.</p>
+
+            <div class="question">6. What is the difference between an array and a linked list?</div>
+            <p>
+                <ul>
+                    <li><b>Array:</b> Fixed-size collection of elements stored in contiguous memory locations.</li>
+                    <li><b>Linked List:</b> Dynamic data structure consisting of nodes linked via pointers.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
